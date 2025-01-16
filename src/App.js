@@ -18,7 +18,7 @@ function App() {
   return (
     <>
       <p>How much did you pay?</p>
-      <input value={billInitialCost} onChange={e => setbillInitialCost(e.target.value)}></input>
+      <input type="number" value={billInitialCost} onChange={e => setbillInitialCost(e.target.value)}></input>
       <ServiceEnjoyment howMuchEnjoyed={howMuchYouEnjoyed} setHowMuchEnjoyed={setHowMuchYouEnjoyed}>you</ServiceEnjoyment>
       <ServiceEnjoyment howMuchEnjoyed={howMuchFriendEnjoyed} setHowMuchEnjoyed={setHowMuchFriendEnjoyed}>you</ServiceEnjoyment>
       <h3>You pay ${Number(billInitialCost) + tip} (${billInitialCost} + ${tip})</h3>
