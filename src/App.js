@@ -22,6 +22,13 @@ function App() {
       <ServiceEnjoyment howMuchEnjoyed={howMuchYouEnjoyed} setHowMuchEnjoyed={setHowMuchYouEnjoyed}>you</ServiceEnjoyment>
       <ServiceEnjoyment howMuchEnjoyed={howMuchFriendEnjoyed} setHowMuchEnjoyed={setHowMuchFriendEnjoyed}>you</ServiceEnjoyment>
       <h3>You pay ${Number(billInitialCost) + tip} (${billInitialCost} + ${tip})</h3>
+      <button
+        onClick={() => {
+          setbillInitialCost(100);
+          setHowMuchYouEnjoyed(20);
+          setHowMuchFriendEnjoyed(20);
+        }}
+      >Reset</button>
     </>
   );
 }
